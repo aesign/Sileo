@@ -1,0 +1,113 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+    
+}
+
+.blur {
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+}
+
+.Scrolled {
+    color: white !important;
+    fill: #ffffff;
+}
+
+.active {
+    opacity: 0.7;
+}
+
+.iconnav svg {
+ width: 26px;
+ height: 26px;
+}
+.Scrolled:hover {
+    opacity: 0.7;
+    
+}
+
+
+
+.HeaderScrolled {
+    background: rgba(44,177,190, 0.90);
+    padding: 15px 0;
+    color: white;
+}
+
+.HeaderGroup {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+}
+
+.Header img {
+    width: 25px;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.Header a {
+    display: inline-grid;
+    padding: 8px 20px;
+    color: #919196;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.path {
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.Header a:hover{
+    padding: 8px 20px;
+    color: rgba(44,177,190, 0.95);
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+ 
+
+@media (max-width: 640px) {
+    .Header {
+        padding: 15px 0;
+    }
+
+    .HeaderScrolled {
+        padding: 10px 0 !important;
+    }
+
+    .Header a {
+        font-size: 14px;
+    }
+
+    .Header img {
+        width: 25px;
+        margin-top: 2px;
+        margin-bottom: -2px;
+    }
+
+    .HeaderGroup {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .Header a:nth-child(3) {
+        display: none;
+    }
+}

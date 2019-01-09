@@ -1,0 +1,80 @@
+.icon-arrow{
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.icon-envelope {
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+
+.Installation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.Installation img {
+    max-width: 120px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.Installation p {
+    font-weight: 450;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Installation p:nth-of-type(2) {
+    color: #CCCCCC;
+    font-weight: 400;
+}
+
+
+a:hover > .icon-arrow{
+    transform: translateX(5px);
+}
+
+.Installation span:nth-of-type(1) {
+    font-weight: 700;
+}
+
+.Installation p:nth-of-type(1) p:nth-of-type(3) {
+    color: green;
+}
+
+@media (max-width: 420px) {
+
+    .Installation {
+        margin-bottom: 30px;
+    }
+
+    .Installation img {
+        max-width: 60px;
+        margin-bottom: 35px;
+    }
+
+    .Installation p {
+        line-height: 20px;
+    }
+
+
+    .Installation a:hover > .icon-arrow,.Installation a:active > .icon-arrow{
+        transform: translateX(5px);
+        
+    }
+
+
+
+
+
+
+
+
+}
